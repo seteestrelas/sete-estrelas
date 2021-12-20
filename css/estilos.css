@@ -61,7 +61,7 @@ img {
 .menu {
     max-width: 960px;
     background-color: #2B4570;
-    padding: 20px 0;
+    padding: 10px 0;
     
     display: flex;
     justify-content: space-between;
@@ -104,7 +104,8 @@ img {
     padding: 60px 0;
     padding-top: 150px;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .sobre-info {
@@ -126,7 +127,7 @@ img {
 
 .sobre-img {
     flex: 1 1 160px;
-    margin: 0 10px;
+    margin: 0 50px;
 }
 
 /* produtos */
@@ -138,13 +139,15 @@ img {
 
 .produtos h1 {
     font-size: 3em;
-    margin: 0 10px 60px 10px;
+    margin: 0 10px 20px 0px;
 }
 
 .container-produtos {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
+    justify-content: center;
+align-items: center;
+
+    margin-top: 3rem;
 }
 
 .produtos-item {
@@ -152,61 +155,82 @@ img {
     margin: 10px;
 }
 
-.produtos-item h2 {
-    font-size: 3em;
+.produtos-item h3 {
     color: #a4a4a4;
     background-color: #f7f7f7;
-    padding: 60px 20px;
+    padding: 30px 20px;
 }
 
-.purple {
-    border-top: 8px solid #ae81ff;
+.hidometro {
+    border-top: 8px solid #2B4570;
 }
 
-.pink {
-    border-top: 8px solid #f9265e;
+.hidometro img{
+    height: 280px;
 }
 
-.blue {
-    border-top: 8px solid #66d9eb;
+.enrolador-mangueira {
+    border-top: 8px solid #2B4570;
+}
+
+.suporte-pia {
+    border-top: 8px solid #2B4570;
+}
+
+.suporte-pia p {
+    margin-bottom: 1rem;
+}
+
+.lixeira-redonda {
+    border-top: 8px solid #2B4570;
+}
+
+.varal-retratil {
+    border-top: 8px solid #2B4570;
+}
+
+.mao-francesa {
+    border-top: 8px solid #2B4570;
+}
+
+.mao-francesa p {
+    margin-bottom: 1rem;
 }
 
 
 .footer {
+    width: 100%;
     height: 200px;
-    display: flex;
     background: #2B4570;
+
+    display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-.footer p {
-    font-size: 2.25em;
-    flex: 1;
-    align-items: center;
-    text-align: center;
-    color: #122ab2;
+.container{
+    background: #2B4570;
+}
+
+.footer h1 {
+    color: white;
+}
+
+.footer .content {
+    width: 100%;
+    height: 100%;
+    max-width: 960px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    color: white;
+
+    padding: 20px 0px;
+
+}
+
+.footer .telefones {
+    color: white
 }
 
 
 
-@media (max-width:600px) {
-    .newsletter-form button {
-        font-size: 1.5em;
-    }
-}
-
-
-@media (max-width:800px) {
-    .preco {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .preco .preco-item:nth-child(3) {
-        order: -2;
-    }
-
-    .preco .preco-item:nth-child(2) {
-        order: -1;
-    }
-}
